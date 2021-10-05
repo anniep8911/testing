@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.content{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 200px;
+        }
+        div.content>div{
+            width: calc(100% / 5 - 20px);
+            height: 240px;
+            background-color: #fc0;
+            border-radius: 0 50% 0 0;
+            position: relative;
+            transition: all 0.5s;
+        }
+        div.content>div::before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: calc(80% + 20px);
+            height: calc(80% + 20px);
+            border: 2px solid red;
+            bottom: 0;right: 0;
+            transition: all 0.5s;
+            z-index: -2;
+        }
+        div.content>div:hover{
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>    

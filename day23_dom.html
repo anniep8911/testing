@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day23_dom.html</title>
+    <script>
+        window.onload = function(){
+            /*
+            var btn =  document.getElementsByTagName('button');
+            btn[0].onclick = function(){
+                alert('함수가 실행되었습니다!');
+            }
+
+            var idid = document.getElementById('idid');
+            idid.onclick=function(){
+                alert('아이디를 가진 함수가 시작되었습니다!');
+            }
+
+            var btn = document.getElementsByClassName('btn');
+            btn[0].onclick=function(){
+                alert('첫번째 클래스 클릭!');
+            }
+            btn[1].onclick=function(){
+                alert('두번째 클래스 클릭!');
+            }
+
+            */
+
+            var btn = document.querySelectorAll('.btn');
+
+            for(var i = 0; i < btn.length; i++){
+                btn[i].onclick=function(){
+                    alert('!!');
+                }
+            }
+
+            btn[0].onclick= function(){
+                alert('!!');
+            }
+            btn[0].addEventListener('click',function(){
+
+            })
+            btn[1].onclick= function(){
+                alert('!!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <button>버튼을 클릭하면 함수가 실행됩니다!</button>
+    <button id="idid">버튼을 클릭하면 함수가 실행됩니다!</button>
+    <button class="btn">버튼을 클릭하면 함수가 실행됩니다!</button>
+    <button class="btn">버튼을 클릭하면 함수가 실행됩니다!</button>
+    <button>버튼을 클릭하면 함수가 실행됩니다!</button>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content02</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allison&family=ZCOOL+KuaiLe&display=swap');
+   
+
+        @font-face {
+        font-family: 'twaysky';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+        div.content{}
+        div.content>div.header{
+            width: 100vw;
+            height: 560px;
+            background-color: darkslategrey;
+            text-align: center;
+            color: #fff;
+            padding-top: 160px;
+        }
+        div.content>div.header>h2{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 80px;
+            text-transform: capitalize;
+            font-family: 'GowunBatang-Regular';
+    
+        }
+        div.content>div.header>p{
+            width: calc(80% / 12 * 8);
+            max-width: 1080px;
+            margin: 0 auto;
+            height: 40px;
+            line-height: 20px;
+            overflow: hidden;
+            font-family: 'Allison';
+           
+
+        }
+        div.content>div.section{
+            width: 80%;
+            max-width:1080px;
+            margin: 0 auto;
+            background-color: #fff;
+            height: 400px;
+            margin-top: -200px;
+            padding: 80px 0; 
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin-bottom: 300px;
+        }
+        div.content>div.section>div.article{}
+        div.content>div.section>div.article>div.texts{
+            text-align: center;
+            width: calc(100% / 12 * 4);
+            margin: 0 auto;
+        }
+        div.content>div.section>div.article>div.texts>h3{
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 40px;
+            text-transform: capitalize;
+        }
+        div.content>div.section>div.article>div.texts>h5{
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 40px;
+            text-transform: capitalize;
+        }
+        div.content>div.section>div.article>div.texts>p{
+            font-size: 14px;
+            height: 100px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+        div.content>div.section>div.article>div.texts>button{
+            width: calc(50% + 20px);
+            line-height: 40px;
+            margin-top: 20px;
+            background-color: #545;
+            color: #fff;
+            border: 0;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="content cnt02">
+        <div class="header">
+            <h2>content title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor provident nemo cumque necessitatibus exercitationem sunt, natus, atque beatae alias facilis dicta iusto temporibus neque esse! Odit fuga quia quam a.</p>
+        </div>
+        <div class="section">
+            <div class="article">
+                <div class="texts">
+                    <h3>segment title</h3>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sunt adipisci odit eos saepe possimus maiores earum assumenda quos natus veniam consequatur delectus esse, mollitia atque similique vitae. Obcaecati, esse.</p>
+                    <button>button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

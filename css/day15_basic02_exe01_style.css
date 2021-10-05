@@ -1,0 +1,302 @@
+@import url('all.css');
+@import url('reset.css');
+
+/* 메뉴탑 */
+div.mnTopWrap{
+    background-color: #333;
+}
+div.mnTopWrap>div.mnTop{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #fff;
+    height: 40px;
+}
+
+div.mnTopWrap>div.mnTop>div.logo{
+    float: left;
+    line-height: 40px;
+}
+div.mnTopWrap>div.mnTop>ul.nav{
+    float: right;
+}
+div.mnTopWrap>div.mnTop>ul.nav>li{
+    float: left;
+    line-height: 40px;
+    margin-left: 35px;
+}
+
+/* 헤더 */
+div.hdrWrap{
+    background:linear-gradient(90deg , #989 0%, #dbc 100%);
+}
+div.hdrWrap>div.header{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+    height: 80px;
+    color: #fff;
+}
+
+div.hdrWrap>div.header>h1{
+    line-height: 80px;
+    float: left;
+    font-size: 18px;
+}
+div.hdrWrap>div.header>ul.nav{
+    line-height: 80px;
+    float: right;
+}
+div.hdrWrap>div.header>ul.nav>li{
+    float: left;
+    margin-left: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* 메인 */
+div.mnWrap{}
+div.mnWrap>div.image{
+    width: 100%;
+    height: 840px;
+    background-color: #dbc;
+}
+div.mnWrap>div.main{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.mnWrap>div.main{
+    margin-top: -600px;
+    height: 600px;
+}
+div.mnWrap>div.main>h1{
+    font-size: 72px;
+    line-height: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+div.mnWrap>div.main>p{
+    width: calc(100% / 12 * 6);
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+    height: 120px;
+    overflow: hidden;
+    color: #666;
+    margin-top: 20px;
+}
+div.mnWrap>div.main>button{
+    width: calc(100% / 12 * 2 + 20px);
+    height: 40px;
+    line-height: 40px;
+    background-color: #545;
+    color: #fff;
+    border-radius: 20px;
+    border:0;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* 컨텐츠 공통영역 */
+div.cntWrap{
+    margin-top: 160px;
+}
+div.cntWrap>div.content{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+div.cntWrap>div.content>div.header{
+    width: calc(100% / 12 * 5);
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.cntWrap>div.content>div.header>h2{
+    font-size: 36px;
+    line-height: 80px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+div.cntWrap>div.content>div.header>p{
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+}
+div.cntWrap>div.content>div.section{
+    margin-top: 80px;
+}
+div.cntWrap>div.content>div.section>div.article>div.image{
+    background-color: #dbc;
+}
+div.cntWrap>div.content>div.section>div.article>div.texts>h3{
+    font-weight: 700;   
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+div.cntWrap>div.content>div.section>div.article>div.texts>h5{
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+}
+div.cntWrap>div.content>div.section>div.article>div.texts>p{
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    height: 80px;
+}
+div.cntWrap>div.content>div.section>div.article>div.texts>div.sns{
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/* 컨텐츠1 */
+div.cntWrap>div.content.cnt01>div.section{
+    height: 480px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article{
+    width: calc(100% / 3 - 20px);
+    float: left;
+    margin: 0 10px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image{
+    height: 240px;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+    transition: margin 0.5s;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.texts{
+    padding: 40px calc(100% / 4 * 0.5);
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 40px;
+    margin-top: -200px;
+    transition: all 0.5s;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article:hover>div.image{
+    animation: back 0.8s forwards linear;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article:hover>div.texts{
+    animation: front 0.8s forwards linear;
+}
+
+@keyframes front {
+    50%{
+        padding-top: 200px;
+    }
+    100%{
+        position:relative;
+        padding-top:40px;
+        z-index: 4;
+        border:1px solid transparent;
+    }
+}
+
+@keyframes back {
+    50%{
+        margin-top: -40px;
+    }
+    100%{
+        margin-top: 0;
+        background-color: #fc0;
+    }
+}
+
+/* 베너 */
+div.bnrWrap{
+    margin-top: 160px;
+    background:linear-gradient(90deg , #989 0%, #dbc 100%);
+    padding: 80px 0;
+}
+
+div.bnrWrap>div.banner{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 200px;
+}
+div.bnrWrap>div.banner>div.image{
+    width: calc(100% / 5 - 20px);
+    margin: 0 10px;
+    height: 200px;
+    float: left;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+
+/* 컨텐츠2 */
+div.cntWrap>div.content.cnt02>div.header{
+    margin: 0;
+    text-align: left;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article{
+    width: calc(50% - 20px);
+    float: left;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image::before{
+    width: 99%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    border: 2px solid orange;
+    transition: all 0.5s;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
+    height: 200px;
+    width: calc(100% / 6 * 2 + 40px);
+    float: left;
+    border-radius: 0 50%  0 0;
+    transition: all 0.5s;
+    position: relative;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image:hover{
+    border-radius: 0;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image:hover::before{
+    border:2px solid transparent    ;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts:hover{
+
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+    float: left;
+    width: calc(100% / 6 * 4 - 40px);
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+    background-color: #fff;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{
+    text-align: left;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h5{
+    text-align: left;
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-of-type(1){
+    width: 100%;    
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-of-type(1)>div.image{
+    height: 280px;
+    width: 100%;
+    border-radius: 0;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-of-type(1)~div{
+    margin-top: 40px;
+}

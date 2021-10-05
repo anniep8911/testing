@@ -1,0 +1,106 @@
+div.mnTopWrap{
+    background-color: red;
+}
+
+div.cntWrap:nth-of-type(4){
+    margin-top: 40px;
+}
+div.cntWrap>div.content>div.header{
+    width: 100%;
+}
+div.cntWrap>div.content.cnt01{
+    height: 700px;
+}
+div.cntWrap>div.content.cnt01>div.section{
+    margin-top: 20px;
+    height: 620px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article{
+    height: 300px;
+    width: 100%;
+    margin: 0;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article:nth-of-type(2){
+    margin-top: 40px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article:nth-of-type(2)~div.article{
+    display: none;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.image{
+    height: 160px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.texts>p{
+    display: none;
+}
+
+div.cntWrap>div.content.cnt01>div.section>div.article>div.texts>div.sns{
+    margin-top: 0;
+}
+div.cntWrap:nth-of-type(5){
+    margin-top: 40px;
+}
+div.cntWrap>div.content.cnt02{
+    height: 480px;
+}
+div.cntWrap>div.content.cnt02>div.header{
+    padding-top: 40px;
+}
+div.cntWrap>div.content.cnt02>div.header>h2{
+    width: 100%;
+}
+div.cntWrap>div.content.cnt02>div.section{
+    margin-top: -140px;
+    height: 380px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article{
+    height: 380px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
+    width: 100%;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+    width: 100%;
+    padding: 20px 10px 0 10px;
+    height: 140px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>button{
+    display: none;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h5{
+    display: none;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>p{
+    display: block;
+    height: 40px;
+    margin-top: 20px;
+}
+
+div.cntWrap:nth-of-type(6){
+    margin-top: 40px;
+}
+div.cntWrap>div.content.cnt03{
+    height: 560px;
+}
+div.cntWrap>div.content.cnt03>div.section{
+    margin-top: 20px;
+    height: 500px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article{
+    width: 100%;
+    margin: 0;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article:nth-of-type(2){
+    margin-top: 20px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article:nth-of-type(2)~div.article{
+    display: none;
+}
+div.ftrWrap{
+    margin-top: 40px;
+}
+div.ftrWrap>div.footer>h1{
+    font-size: 25px;
+}
+div.ftrWrap>div.footer>p{
+    width: 100%;
+}

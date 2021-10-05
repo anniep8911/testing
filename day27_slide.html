@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day27_slide.html</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        div.imgView{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 40px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+        div.imgView>div.imgGroup{
+            width: 500%;
+            transition: margin-left 0.5s;
+        }
+        div.imgView>div.imgGroup>div.image{
+            width:20%;
+            height: 500px;
+            float: left;
+        }
+        div.imgView>div.imgGroup>div.image.i1{
+            background-color: aquamarine;
+        }
+        div.imgView>div.imgGroup>div.image.i2{
+            background-color: cadetblue;
+        }
+        div.imgView>div.imgGroup>div.image.i3{
+            background-color: deeppink;
+        }
+        div.imgView>div.imgGroup>div.image.i4{
+            background-color: lightpink;
+        }
+        div.imgView>div.imgGroup>div.image.i5{
+            background-color: yellowgreen;
+        }
+        div.imgView>div.btns{
+            width: 100%;
+            height: 80px;
+            margin: auto;
+            position: absolute;
+            line-height: 80px;
+            top: 0;bottom: 0;
+            font-size: 25px;
+
+        }
+        div.imgView>div.btns>div.left{
+            float: left;
+            cursor: pointer;
+        }
+        div.imgView>div.btns>div.right{
+            float: right;
+            cursor: pointer;
+        }
+
+        ul.paging{
+            width: 21%;
+            margin: 0 auto;
+            margin-top: -70px;
+            position: relative;
+        }
+        ul.paging>li{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid white;
+            float: left;
+            margin: 0px 25px;
+            cursor: pointer;
+        }
+        ul.paging>li.sel{
+            background-color: #fff;
+        }
+
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            var i = 0;
+            
+            $('li').click(function(){
+                $('li').removeClass('sel');
+                $(this).addClass('sel');
+
+                var ind = $(this).index();
+
+                $('.imgGroup').css('margin-left',ind*-100+'%');
+                $('.imgGroup').css({
+                    marginLeft: ind*-100+'%'
+                });
+                i= ind;
+            });
+
+            $('.left').click(function(){
+                i++;
+                if(i >= 4){
+                    i=4;
+                }
+                $('.imgGroup').css('margin-left',i*-100+'%');
+                $('li').removeClass('sel');
+                $('li').eq(i).addClass('sel');
+            });
+
+            $('.right').click(function(){
+                i--;
+                if(i <= 0){
+                    i=0;
+                }
+                $('.imgGroup').css('margin-left',i*-100+'%');
+                $('li').removeClass('sel');
+                $('li').eq(i).addClass('sel');
+            });
+
+    });
+    </script>
+</head>
+<body>
+    <div class="imgView">
+        <div class="imgGroup">
+            <div class="image i1"></div>
+            <div class="image i2"></div>
+            <div class="image i3"></div>
+            <div class="image i4"></div>
+            <div class="image i5"></div>
+        </div>
+        <div class="btns">
+            <div class="left"><i class="fas fa-chevron-left"></i></div>
+            <div class="right"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </div>
+    <ul class="paging">
+        <li class="sel"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

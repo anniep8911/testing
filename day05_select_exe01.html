@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select tag</title>
+    <style>
+       select.selectTag{
+            outline : 2px solid red;
+        }
+        select.selectTag>option{
+            color: green;
+        }
+        select.selectTag{
+            outline : 2px solid blue;
+        }
+        ul.nav{
+            outline : 2px solid orange;
+        }
+
+        ul.nav>li{
+            color: darkseagreen;
+        }
+        ul.nav>li:nth-of-type(1){
+            color: purple;
+            font-size: 20px;
+        }
+        ul.nav>li:nth-of-type(2){
+            color: black;
+        }
+
+
+
+    </style>
+    <link rel="stylesheet" href="css/day05_style.css">
+</head>
+<body>
+    <select class="selectTag" name="" id="">
+        <option value="옵션1">옵션1</option>
+        <option value="옵션2">옵션2</option>
+        <option value="옵션3" selected>옵션3</option>
+        <option value="옵션4">옵션4</option>
+        <option value="옵션5">옵션5</option>
+        <option value="옵션6">옵션6</option>
+        <option value="옵션7">옵션7</option>
+    </select>
+
+    <hr>
+
+    <ul class="nav">
+        <li>테스트1</li>
+        <li>테스트2</li>
+        <li>테스트3</li>
+        <li>테스트4</li>
+        <li>테스트5</li>
+    </ul>
+</body>
+</html>

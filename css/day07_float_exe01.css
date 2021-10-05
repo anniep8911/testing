@@ -1,0 +1,145 @@
+@import url('reset.css');
+
+@import url('all.css');
+
+@font-face {
+
+    font-family: 'Cafe24SsurroundAir';
+
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+​
+
+body{
+
+    text-transform: capitalize;
+
+    font-family:'Cafe24SsurroundAir';
+
+}
+
+div.content{
+
+    width: 80%;
+
+    max-width: 1080px;
+
+    margin: 0 auto;
+
+}
+
+div.content>div.header{
+
+    width: calc(100% / 12 * 5);
+
+    text-align: center;
+
+    margin: 0 auto;
+
+}
+
+div.content>div.header>h2{
+
+    font-size: 35px;
+
+    line-height: 80px;
+
+    font-weight: 700;
+
+}
+
+div.content>div.header>p{
+
+    height: 40px;
+
+    line-height: 20px;
+
+    overflow: hidden;
+
+    font-size: 14px;
+
+}
+
+div.content>div.section{
+
+    margin-top: 80px;
+
+}
+
+div.content>div.section>div.article{
+
+    width: calc(100% / 4 - 20px);
+
+    margin: 0 10px;
+
+    height: 240px;
+
+    background-color: #ccc;
+
+    float: left;
+
+}
+
+div.content>div.section>div.article>div.image{
+
+    width: 100%;
+
+    height: 240px;
+
+    background-color: rgb(130, 52, 52);
+
+}
+
+div.content>div.section>div.article:nth-last-of-type(1)>div.image{}
+
+div.content>div.section>div.article:nth-last-of-type(2)>div.image{}
+
+div.content>div.section>div.article:nth-last-of-type(3)>div.image{}
+
+div.content>div.section>div.article:nth-last-of-type(4)>div.image{}
+
+div.content>div.section>div.article>div.texts{
+
+    width: 100%;
+
+    height: 240px;
+
+    background-color:rgb(256, 256, 256);
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding: 40px 30px 60px 30px;
+
+}
+
+div.content>div.section>div.article>div.texts>h3{
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    line-height: 40px;
+
+}
+
+div.content>div.section>div.article>div.texts>p{
+
+    height: 80px;
+
+    overflow: hidden;
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    margin-top: 20px;
+
+}

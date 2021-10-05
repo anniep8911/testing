@@ -1,0 +1,118 @@
+div.mnTopWrap{
+    display: none;
+}
+
+div.hdrWrap>div.header{
+    width: 90%;
+}
+
+div.mnWrap>div.image{
+    height: 320px;
+}
+div.mnWrap>div.main{
+    width: 90%;
+    height: 320px;
+    margin-top: -320px;
+    padding-top: 80px;
+}
+div.mnWrap>div.main>h1{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 700;
+}
+div.mnWrap>div.main>p{
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    width: calc(100% / 8 * 6);
+}
+div.mnWrap>div.main>button{
+    width: calc(100% / 8 * 2 + 20px);
+}
+
+div.cntWrap{
+    margin-top: 40px;
+}
+div.cntWrap>div.content{
+    width: 90%;
+}
+div.cntWrap>div.content>div.header>h2{
+    line-height: 40px;
+    font-size: 25px;
+}
+div.cntWrap>div.content>div.header>p{
+    font-size: 12px;
+    width: calc(100% / 8 * 4);
+}
+div.cntWrap>div.content>div.section{
+    margin-top: 40px;
+}
+div.cntWrap>div.content.cnt01{
+    height: 560px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article{
+    width: calc(50% - 20px);
+}
+div.cntWrap>div.content.cnt01>div.section>div.article:nth-of-type(3){
+    display: none;
+}
+div.bnrWrap{
+    margin-top: 40px;
+    padding: 40px 0;
+}
+div.bnrWrap>div.benner{
+    width: 90%;
+}
+div.bnrWrap>div.benner>div.image{
+    width: calc(100% / 3 - 20px);
+}
+div.bnrWrap>div.benner>div.image:nth-of-type(3)~div.image{
+    display: none;
+}
+div.cntWrap>div.content.cnt02{
+    height: 860px;
+}
+div.cntWrap>div.content.cnt02>div.header{
+    text-align: center;
+}
+div.cntWrap>div.content.cnt02>div.header>p{
+    margin: 0 auto;
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.article{
+    width: 100%;
+    margin-top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article:nth-of-type(2){
+    margin-top: 40px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
+    width: 50%;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+    width: 50%;
+    text-align: center;
+    padding: 20px 20px 20px 40px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>div.sns{
+    display: none;
+}
+
+div.ftrWrap{
+    margin-top: 60px;
+}
+div.ftrWrap>div.footer{
+    width: 90%;
+    padding-top: 40px;
+    height: 240px;
+}
+div.ftrWrap>div.footer>h1{
+    line-height: 40px;
+}
+div.ftrWrap>div.footer>p{
+    margin-top: 20px;
+}
+div.ftrWrap>div.footer>div.sns{
+    line-height: 40px;
+    margin-top: 20px;
+}
